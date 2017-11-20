@@ -1,0 +1,432 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial;
+}
+
+#surface>#header,
+#surface>.header-banner{
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    flex: none;
+}
+
+#surface {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+}
+
+#surface, body, html {
+    height: 100%;
+}
+
+#surface>#content {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+}
+
+#content {
+    outline: 0;
+}
+
+#content, body {
+    position: relative;
+    overflow-y: auto;
+}
+
+#header {
+    background: #026AA7;
+    overflow: hidden;
+    padding: 5px 8px;
+    z-index: 10;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .15);
+}
+
+#header .header-btn {
+    height: 30px;
+    position: relative;
+}
+
+.header-logo {
+    bottom: 0;
+    display: block;
+    left: 50%;
+    margin-left: -40%;
+    top: 5px;
+    text-align: center;
+    -webkit-transition: .1s ease;
+    transition: .1s ease;
+    z-index: 2;
+}
+
+.header-logo-loading {
+    background-image: url("/assets/img/header-loading-logo.gif");
+    background-size: 18px 18px;
+    display: none;
+    height: 18px;
+    left: 2px;
+    position: absolute;
+    top: 6px;
+    width: 18px;
+}
+
+.header-logo-default {
+    background-image: url("/assets/img/header-logo.png");
+
+}
+
+.board-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.headers-board-button {
+    display: inline-block;
+    height: 20px;
+    background-color: #4D95BE;
+    padding: 5px 8px 2px 5px;
+    margin-bottom: 8px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.header-btn {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.container-search {
+    display: inline-block;
+}
+
+.header-search {
+    background-color: #4D95BE;
+    border-radius: 5px;
+    height: 20px;
+    padding: 5px 8px 2px 5px;
+    position: relative;
+    top: 6px;
+}
+
+
+.header-search-input{
+    display: inline-block;
+    height: 20px;
+    padding: 5px 8px 2px 5px;
+    margin-bottom: 8px;
+    width: 120px;
+    background-color: transparent;
+    border:none;
+    position: relative;
+    bottom: 5px;
+}
+
+.header-search .header-btn .header-btn-icon {
+    position: relative;
+    bottom:5px;
+}
+
+header {
+    background-color: #026aa7;
+    height: 2.813em;
+}
+
+body {
+    background-color: #4ba5da;
+}
+
+.container-head {
+    padding: 7px 10px;
+    /*outline: 2px solid palegreen;*/
+}
+
+.boxes {
+    display: inline-block;
+    /*outline: 2px dotted purple;*/
+    width: 19%;
+    vertical-align: middle;
+}
+
+.table {
+    background-color: #4e97c2;
+    border-radius: 3px;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    height: 30px;
+    padding-left: 10px;
+    padding-top: 2px;
+    width: 100px;
+}
+
+.table span, .table a {
+    color: #fff;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+
+.search {
+    background-color: #4e97c2;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    padding-left: 10px;
+    padding-top: 2px;
+    width: 180px;
+}
+
+.search input {
+    background-color: transparent;
+    border: none;
+    width: 80%;
+}
+
+.fa {
+    vertical-align: middle;
+}
+
+.trello {
+    /*outline: 2px dotted orange;*/
+    display: inline-block;
+    text-align: center;
+    width: 64%;
+    vertical-align: middle;
+}
+
+.trello img {
+    width: 8%;
+}
+
+.icons {
+    /*outline: 2px dotted red;*/
+    display: inline-block;
+    height: 30px;
+    width: 15%;
+    vertical-align: middle;
+}
+
+.icons div {
+    background-color: #8997a0;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 7px;
+    margin-right: 3px;
+    vertical-align: top;
+}
+
+.icons img {
+    width: 13%;
+    border-radius: 50%;
+}
+
+/*Tableros*/
+.container {
+    /*outline: 2px solid yellow*/;
+    padding-left: 50px;
+}
+
+.info-menu {
+    /*outline: 1px solid pink*/
+    height: 3.125em;
+}
+
+.info-table {
+    color: #fff;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    width: 30%;
+}
+.info-table p {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.private {
+    display: inline-block;
+    float: right;
+}
+
+.private::before {
+    content: attr(fa fa-lock);
+    font-family: "FontAwesome";
+}
+
+#menu {
+    /*outline: 2px solid yellow;*/
+    color: #fff;
+    float: right;
+    height: 100%;
+    padding: 10px;
+    width: 18%;
+}
+
+select.select.menu{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 7px;
+    margin-left: 7px;
+    -webkit-appearance: none;
+}
+
+.box-button {
+    background-color: #3b8ebe;
+    border-radius: 4px;
+    border: none;
+    display: inline-block;
+    height: 35px;
+    padding-left: 15px;
+    width: 250px;
+}
+
+.box-button::placeholder {
+    color: #fff;
+}
+
+.list-button{
+    background-color: transparent;
+}
+
+/* Eslilos añadidos primera caja*/
+
+.div-texting {
+    background-color: #e8e8eb;
+    border-radius: 4px;
+    border: none;
+    display: inline-block;
+    height: 95px;
+    width: 350px;
+}
+
+.div-texting-moving {
+    background-color: #e8e8eb;
+    border-radius: 4px;
+    border: none;
+    display: inline-block;
+    height: 96px;
+    width: 350px;
+    transform: translateX(10%);
+}
+
+.insert-text {
+    background-color: #dcdcde;
+    border: 1px solid #b5b5b5;
+    height: 40%;
+    margin: 5px 5px 0 5px;
+    outline: none;
+    padding: 5px 10px;
+    width: 90%;
+}
+
+insert-text::placeholder{
+    color: blue;
+}
+
+.button-save {
+    background-color: #55bc8b;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    margin: 5px 5px 0 5px;
+    padding: 8px 20px;
+    outline: none;
+}
+
+/*Añadiendo estilos segunda caja*/
+.divList {
+    background-color: #e8e8eb;
+    border-radius: 4px;
+    border: none;
+    display: inline-block;
+    float: left;
+    height: 180px;
+    width: 350px;
+}
+
+.classList {
+    color: #4a4a4a;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 10px;
+}
+
+.textList {
+    border: none;
+    margin-left: 10px;
+    outline: none;
+    padding: 5px 10px;
+    width: 89%;
+}
+
+.addButton {
+    background-color: #55bc8b;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    margin: 5px 5px 0 10px;
+    padding: 8px 20px;
+    outline: none;
+}
+
+.newAddButton{
+    background-color: #55bc8b;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    margin: 5px 5px 0 10px;
+    padding: 8px 20px;
+    outline: none;
+}
+
+.divListBigger {
+    background-color: #e8e8eb;
+    border-radius: 4px;
+    border: none;
+    display: inline-block;
+    float: left;
+    height: 210px;
+    width: 350px;
+}
+
+.textListHidden {
+    background-color: #f3f3f3;
+    border: none;
+    border-radius: 4px;
+    height: 20%;
+    margin-left: 10px;
+    outline: none;
+    padding: 5px 10px;
+    resize: none;
+    width: 93%;
+}
+
+.cardText{
+    border: none;
+    border-radius: 4px;
+    margin: 10px 0 0 10px;
+    outline: none;
+    padding: 5px 10px;
+    width: 93%;
+}
